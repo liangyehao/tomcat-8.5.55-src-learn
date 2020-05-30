@@ -152,6 +152,8 @@
       <Host name="localhost"  appBase="webapps"
             unpackWARs="true" autoDeploy="true">
 
+        <Context path="/lyh" docBase="D:\workspace\personal\1\tomcat01\target\tomcat01"/>
+
         <!-- SingleSignOn valve, share authentication between web applications
              Documentation at: /docs/config/valve.html -->
         <!--

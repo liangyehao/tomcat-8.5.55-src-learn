@@ -421,10 +421,15 @@ public class HostConfig implements LifecycleListener {
         File configBase = host.getConfigBaseFile();
         String[] filteredAppPaths = filterAppPaths(appBase.list());
         // Deploy XML descriptors from configBase
+        // lyh:描述符部署
+        // Host标签
+        // <Context path="/lyh" docBase="D:\workspace\personal\1\tomcat01\target\tomcat01"/>
         deployDescriptors(configBase, configBase.list());
         // Deploy WARs
+        // lyh:war包部署
         deployWARs(appBase, filteredAppPaths);
-        // Deploy expanded folders
+        // Deploy expanded folder
+        // lyh:文件夹部署
         deployDirectories(appBase, filteredAppPaths);
 
     }
